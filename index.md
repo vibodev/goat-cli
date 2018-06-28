@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+# goat-cli
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-You can use the [editor on GitHub](https://github.com/vibodev/goat-cli/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+goat脚手架
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 安装
 
-### Markdown
+```sh
+npm install --save goat-cli --registry=http://47.92.151.102:8082/repository/all/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## 特性
+- ✔︎ 快速创建项目
+- ✔︎ 快速调试
+- ✔︎ 快速发部
+- ✔︎ 模板管理
 
-### Jekyll Themes
+## 文档
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vibodev/goat-cli/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### goat 命令
 
-### Support or Contact
+Usage: goat [command] [options]
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+  Commands:
+
+    create      创建项目目录基本环境。
+    update      检测并更新goat
+    doc         生成项目帮助文档
+    run         运行项目
+    build       编译项目
+    publish     发布项目
+    info        查看goat信息
+    help [cmd]  display help for [cmd]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+    -v, --version  查看版本号
+
+### create
+Usage: goat-create [projectType]
+
+  Options:
+
+    -h, --help               output usage information
+    -o, --outfile <dirpath>  输出位置(可选)。默认当前目录
+
+  Examples:
+    $ goat create
+
+## 示例
+- [goat-webdemo](http://)
+
+## 贡献代码
+
+- [Vibo](http://blog.songxiaobo.cn)
+
+## 协议
+
+[![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)
